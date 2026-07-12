@@ -20,27 +20,44 @@
     </svg>
   </div>
 
-  <main id="card-area">
-    <div id="card-text">Loading…</div>
-  </main>
+  <!-- Deck picker (shown on load / refresh) -->
+  <section id="deck-list" class="screen">
+    <h1 class="deck-title">Decks</h1>
+    <div id="deck-buttons"></div>
+  </section>
 
-  <nav id="controls">
-    <button id="btn-prev" class="ctrl" type="button" aria-label="Previous card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-           stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
-    </button>
-    <button id="btn-flip" class="ctrl" type="button" aria-label="Flip card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-           stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="17 1 21 5 17 9" /><path d="M3 11V9a4 4 0 0 1 4-4h14" />
-        <polyline points="7 23 3 19 7 15" /><path d="M21 13v2a4 4 0 0 1-4 4H3" />
-      </svg>
-    </button>
-    <button id="btn-next" class="ctrl" type="button" aria-label="Next card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
-           stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
-    </button>
-  </nav>
+  <!-- Study view -->
+  <section id="study-view" class="screen" hidden>
+    <header id="study-header">
+      <button id="btn-decks" type="button" aria-label="Back to decks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+             stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+        <span id="deck-name"></span>
+      </button>
+    </header>
+
+    <main id="card-area">
+      <div id="card-text"></div>
+    </main>
+
+    <nav id="controls">
+      <button id="btn-prev" class="ctrl" type="button" aria-label="Previous card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+             stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+      </button>
+      <button id="btn-flip" class="ctrl" type="button" aria-label="Flip card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+             stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="17 1 21 5 17 9" /><path d="M3 11V9a4 4 0 0 1 4-4h14" />
+          <polyline points="7 23 3 19 7 15" /><path d="M21 13v2a4 4 0 0 1-4 4H3" />
+        </svg>
+      </button>
+      <button id="btn-next" class="ctrl" type="button" aria-label="Next card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+             stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+      </button>
+    </nav>
+  </section>
 
   <script src="app.js"></script>
 </body>

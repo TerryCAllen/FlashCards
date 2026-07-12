@@ -1,0 +1,4 @@
+# Available decks. One per line: "Display Name: filename.txt"
+# Each file lives in the decks/ folder and uses the same card format.
+754: 754.txt
+BJJ History: bjj-history.txt

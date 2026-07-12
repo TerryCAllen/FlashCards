@@ -1,0 +1,7 @@
+# BJJ History deck. Same format as the others: "side a: side b"
+# Side A is shown bold, side B regular. Use \n or <br/> for a line break. Lines starting with # are ignored.
+
+Mitsuyo Maeda: Japanese judoka ("Count Combat") who brought judo/jiu-jitsu to Brazil and taught the Gracie family.
+Carlos Gracie: Learned from Maeda and opened the first Gracie academy in 1925.
+Helio Gracie: Refined the art to favor leverage and technique over strength, shaping modern Brazilian Jiu-Jitsu.
+Royce Gracie: Won UFC 1 (1993), proving BJJ's effectiveness and sparking its global growth.
