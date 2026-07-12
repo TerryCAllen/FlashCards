@@ -1,8 +1,21 @@
 # Flash card data. One card per line: "side a: side b"
-# Side A is shown bold, side B regular. Lines starting with # are ignored.
+# Side A is shown bold\n side B regular. Lines starting with # are ignored.
 # Use \n or <br/> for a line break inside a card.
 
-Rectitude: Doing what is right regardless of the consequences.
-Courage: Inner strength to resist opposition; not just stepping on the mat, but making the right decisions.
-Benevolence: Mindset to do good; be kind and generous.
-Politeness: Proper consideration and courtesy toward others.
+5 Keys to Health: Nutrition\n Exercise\n Rest\n Hygiene\n Attitude
+Nutrition: Eat sensibly
+Exercise: Stay fit and ready
+Rest: Recover and recharge
+Hygiene: Stay clean
+Attitude: Assume positive intent
+Positive Attitude: Look at life in a positive way
+Shoshin: Beginner's Mind
+Shoshin characteristics: Be open to new ideas and eager to learn
+Zanshin: Remaining Mind
+Zanshin characteristics: Being alert and aware\n but relaxed and prepared
+Mushin: No Mind (Clear Mind).
+Mushin characteristics: Ability to act in the moment without having to think
+Fudoshin: Immovable Mind
+Fudoshin characteristics: Emotional balance; free from anger\n fear\n and doubt
+4 States of Mind: Shoshin\n Zanshin\n Mushin\n Fudoshin
+5 Elements of Jiu Jitsu: Striking\n Clinching\n Grappling\n Self Defense\n Philosophy
