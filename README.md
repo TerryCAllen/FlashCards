@@ -44,22 +44,26 @@ BJJ History: bjj-history.txt
 
 ## Card format
 
-Every deck file uses the same format — one card per line:
+Every deck file uses the same format — one card per line, with side A and
+side B separated by a colon `:` or a semicolon `;` (whichever comes first):
 
 ```
 side a: side b
+side a ; side b
 ```
 
-- Text before the first colon is **side A** (shown bold).
-- Text after the first colon is side B (regular weight).
+- Text before the first separator is **side A** (shown bold).
+- Text after it is side B (regular weight).
 - Blank lines and lines starting with `#` are ignored.
 - Need a line break inside a card? Use `\n` or `<br/>`.
+
+Tip: use `;` for question/answer decks where the answer might contain a colon.
 
 Example:
 
 ```
 Rectitude: Doing what is right regardless of the consequences.
-Courage: Inner strength to resist opposition.
+Who won UFC 1? ; Royce Gracie.
 Three Levels:\nHigh\nMedium\nLow
 ```
 

@@ -1,7 +1,34 @@
 # BJJ History deck. Same format as the others: "side a: side b"
 # Side A is shown bold, side B regular. Use \n or <br/> for a line break. Lines starting with # are ignored.
 
-Mitsuyo Maeda: Japanese judoka ("Count Combat") who brought judo/jiu-jitsu to Brazil and taught the Gracie family.
-Carlos Gracie: Learned from Maeda and opened the first Gracie academy in 1925.
-Helio Gracie: Refined the art to favor leverage and technique over strength, shaping modern Brazilian Jiu-Jitsu.
-Royce Gracie: Won UFC 1 (1993), proving BJJ's effectiveness and sparking its global growth.
+Origins of Jiu Jitsu ; Trace back to India and China, then Japan approximately 400 years ago.
+
+Who moved to Brazil from Scotland in 1801? ; George Gracie.
+
+Who was Gustavo Gracie? ; A diplomat and descendant of George Gracie.
+
+Who did Gustavo Gracie help bring to Brazil? ; Mitsuyo Maeda.
+
+When did Mitsuyo Maeda come to Brazil? ; Early 1900s.
+
+Who did Mitsuyo Maeda teach? ; Carlos Gracie.
+
+Who was Carlos Gracie? ; Oldest of the five Gracie brothers.
+
+Where did Carlos Gracie begin teaching Jiu Jitsu? ; Rio de Janeiro.
+
+Who was Helio Gracie? ; Youngest Gracie brother.
+
+What physical challenge did Helio Gracie face? ; He was physically frail and weighed about 140 lbs as an adult.
+
+Why did Helio initially learn by observation? ; Doctors advised him not to engage in physical activity.
+
+How did Helio learn Jiu Jitsu at first? ; By watching and memorizing Carlos Gracie's techniques.
+
+How did Helio begin teaching? ; He substituted for Carlos when a student arrived and Carlos was late.
+
+What did Helio do when techniques were difficult due to his size? ; Adapted them through leverage and efficiency.
+
+What martial art evolved from Helio's adaptations? ; Brazilian Jiu Jitsu (BJJ).
+
+Why did Helio's approach stand out? ; Courage and flawless technique.

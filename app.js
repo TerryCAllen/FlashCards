@@ -31,6 +31,18 @@
     return [line.slice(0, idx).trim(), line.slice(idx + 1).trim()];
   }
 
+  // Cards may separate side A / side B with ":" or ";" (whichever comes first).
+  function splitCard(line) {
+    var colon = line.indexOf(":");
+    var semi = line.indexOf(";");
+    var idx;
+    if (colon === -1) idx = semi;
+    else if (semi === -1) idx = colon;
+    else idx = Math.min(colon, semi);
+    if (idx === -1) return null;
+    return [line.slice(0, idx).trim(), line.slice(idx + 1).trim()];
+  }
+
   function eachDataLine(raw, fn) {
     var lines = raw.split(/\r?\n/);
     for (var i = 0; i < lines.length; i++) {
@@ -43,7 +55,7 @@
   function parseCards(raw) {
     var cards = [];
     eachDataLine(raw, function (line) {
-      var parts = splitOnFirstColon(line);
+      var parts = splitCard(line);
       if (!parts) return;
       var a = applyLineBreaks(parts[0]);
       var b = applyLineBreaks(parts[1]);
