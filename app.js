@@ -117,7 +117,7 @@
   }
 
   function next() {
-    if (history.length === 0) return;
+    if (deck.length === 0) return;
     if (pos < history.length - 1) {
       pos++;
     } else {
