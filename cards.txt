@@ -1,0 +1,8 @@
+# Flash card data. One card per line: "side a: side b"
+# Side A is shown bold, side B regular. Lines starting with # are ignored.
+# Use \n or <br/> for a line break inside a card.
+
+Rectitude: Doing what is right regardless of the consequences.
+Courage: Inner strength to resist opposition; not just stepping on the mat, but making the right decisions.
+Benevolence: Mindset to do good; be kind and generous.
+Politeness: Proper consideration and courtesy toward others.
