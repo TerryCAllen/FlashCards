@@ -1,34 +1,34 @@
 # BJJ History deck. Same format as the others: "side a: side b"
-# Side A is shown bold, side B regular. Use \n or <br/> for a line break. Lines starting with # are ignored.
+# Side A is shown bold, side B regular. Use \n or <br/> for a line break. Lines starting with # are ignored
 
-Origins of Jiu Jitsu ; Trace back to India and China, then Japan approximately 400 years ago.
+Origins of Jiu Jitsu ; Trace back to India and China, then Japan approximately 400 years ago
 
-Who moved to Brazil from Scotland in 1801? ; George Gracie.
+Who moved to Brazil from Scotland in 1801? ; George Gracie
 
 Who was Gustavo Gracie? ; A diplomat and descendant of George Gracie.
 
-Who did Gustavo Gracie help bring to Brazil? ; Mitsuyo Maeda.
+Who did Gustavo Gracie help bring to Brazil? ; Mitsuyo Maeda
 
-When did Mitsuyo Maeda come to Brazil? ; Early 1900s.
+When did Mitsuyo Maeda come to Brazil? ; Early 1900s
 
-Who did Mitsuyo Maeda teach? ; Carlos Gracie.
+Who did Mitsuyo Maeda teach? ; Carlos Gracie
 
 Who was Carlos Gracie? ; Oldest of the five Gracie brothers.
 
-Where did Carlos Gracie begin teaching Jiu Jitsu? ; Rio de Janeiro.
+Where did Carlos Gracie begin teaching Jiu Jitsu? ; Rio de Janeiro
 
-Who was Helio Gracie? ; Youngest Gracie brother.
+Who was Helio Gracie? ; Youngest Gracie brother
 
-What physical challenge did Helio Gracie face? ; He was physically frail and weighed about 140 lbs as an adult.
+What physical challenge did Helio Gracie face? ; He was physically frail and weighed about 140 lbs as an adult
 
-Why did Helio initially learn by observation? ; Doctors advised him not to engage in physical activity.
+Why did Helio initially learn by observation? ; Doctors advised him not to engage in physical activity
 
-How did Helio learn Jiu Jitsu at first? ; By watching and memorizing Carlos Gracie's techniques.
+How did Helio learn Jiu Jitsu at first? ; By watching and memorizing Carlos Gracie's techniques
 
-How did Helio begin teaching? ; He substituted for Carlos when a student arrived and Carlos was late.
+How did Helio begin teaching? ; He substituted for Carlos when a student arrived and Carlos was late
 
-What did Helio do when techniques were difficult due to his size? ; Adapted them through leverage and efficiency.
+What did Helio do when techniques were difficult due to his size? ; Adapted them through leverage and efficiency
 
-What martial art evolved from Helio's adaptations? ; Brazilian Jiu Jitsu (BJJ).
+What martial art evolved from Helio's adaptations? ; Brazilian Jiu Jitsu (BJJ)
 
-Why did Helio's approach stand out? ; Courage and flawless technique.
+Why did Helio's approach stand out? ; Courage and flawless technique
