@@ -109,11 +109,27 @@
     return cardIndex;
   }
 
+  function makeFace(side, text) {
+    var face = document.createElement("div");
+    face.className = "card-face " + (side === "a" ? "side-a" : "side-b");
+    face.textContent = text;
+    return face;
+  }
+
   function render() {
     var entry = history[pos];
     var card = deck[entry.cardIndex];
-    cardText.textContent = entry.side === "a" ? card.a : card.b;
-    cardText.classList.toggle("side-a", entry.side === "a");
+    cardText.textContent = "";
+    cardText.classList.remove("side-a");
+    if (entry.revealed) {
+      cardText.appendChild(makeFace("a", card.a));
+      var divider = document.createElement("div");
+      divider.className = "card-divider";
+      cardText.appendChild(divider);
+      cardText.appendChild(makeFace("b", card.b));
+    } else {
+      cardText.appendChild(makeFace(entry.side, entry.side === "a" ? card.a : card.b));
+    }
   }
 
   function next() {
@@ -122,7 +138,7 @@
       pos++;
     } else {
       var cardIndex = drawNextCard();
-      history.push({ cardIndex: cardIndex, side: randomSide() });
+      history.push({ cardIndex: cardIndex, side: randomSide(), revealed: false });
       pos++;
     }
     render();
@@ -138,7 +154,7 @@
   function flip() {
     if (history.length === 0) return;
     var entry = history[pos];
-    entry.side = entry.side === "a" ? "b" : "a";
+    entry.revealed = !entry.revealed;
     render();
   }
 

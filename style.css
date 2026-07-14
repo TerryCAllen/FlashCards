@@ -119,9 +119,26 @@ body {
   -webkit-user-select: none;
 }
 
-#card-text.side-a {
+.card-face { white-space: pre-line; }
+
+.card-face.side-a {
   font-weight: 800;
   color: var(--blue-dark);
+}
+
+.card-face.side-b {
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.card-divider {
+  width: 55%;
+  max-width: 260px;
+  height: 2px;
+  margin: 20px auto;
+  background: var(--blue);
+  opacity: 0.45;
+  border-radius: 2px;
 }
 
 /* Controls */
