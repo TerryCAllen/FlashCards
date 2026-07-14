@@ -199,7 +199,7 @@ body {
 
 .ctrl svg { width: 30px; height: 30px; }
 
-#btn-flip {
+#btn-next {
   flex: 1.3;
   background: var(--blue);
   color: #ffffff;
@@ -207,8 +207,8 @@ body {
 }
 
 .ctrl:active { transform: scale(0.96); }
-.ctrl:not(#btn-flip):active { background: var(--blue-soft); }
-#btn-flip:active { background: var(--blue-dark); }
+.ctrl:not(#btn-next):active { background: var(--blue-soft); }
+#btn-next:active { background: var(--blue-dark); }
 
 /* Shuffle indicator */
 #shuffle-indicator {
@@ -236,5 +236,5 @@ body {
     --ctrl-bg: #16233a;
     --ctrl-border: #24405f;
   }
-  #btn-flip { color: #08111f; }
+  #btn-next { color: #08111f; }
 }

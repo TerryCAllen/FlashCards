@@ -167,6 +167,18 @@
     render();
   }
 
+  // Right button: reveal the answer if on a question, otherwise go to the next card.
+  function advance() {
+    if (deck.length === 0) return;
+    var entry = history[pos];
+    if (entry && !entry.revealed) {
+      entry.revealed = true;
+      render();
+    } else {
+      next();
+    }
+  }
+
   // Reset tracking and show the first card for the current deck.
   function startDeck() {
     order = [];
@@ -272,8 +284,7 @@
   // ---------- controls ----------
   function bindControls() {
     document.getElementById("btn-prev").addEventListener("click", prev);
-    document.getElementById("btn-next").addEventListener("click", next);
-    document.getElementById("btn-flip").addEventListener("click", flip);
+    document.getElementById("btn-next").addEventListener("click", advance);
     document.getElementById("btn-decks").addEventListener("click", showDeckList);
     document.getElementById("mode-a").addEventListener("click", function () { setMode("a"); });
     document.getElementById("mode-b").addEventListener("click", function () { setMode("b"); });
@@ -302,7 +313,7 @@
         case "d":
         case "D":
           e.preventDefault();
-          next();
+          advance();
           break;
         case "ArrowUp":
         case "ArrowDown":
