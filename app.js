@@ -11,7 +11,7 @@
   var history = [];   // [{ cardIndex, side, revealed }] every slide displayed
   var pos = -1;       // current index into history
   var inStudy = false;
-  var sideMode = "random"; // "a" | "b" | "random": which side shows first
+  var sideMode = "a"; // "a" | "b" | "random": which side shows first (default A)
   var MODE_KEY = "flashcards-side-mode";
 
   var deckListView = document.getElementById("deck-list");
