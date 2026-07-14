@@ -2,6 +2,15 @@
 # Side A is shown bold\n side B regular. Lines starting with # are ignored.
 # Use \n or <br/> for a line break inside a card.
 
+7 Virtues of a Warrior (Bushido):Rectitude\n Courage \n Benevolence \n Respect\n Loyalty \n Honesty / Sincerity \n Honor
+Rectitude:Doing what is right w/o regard for the consequences 
+Courage: Inner strength to resist opposition\n Not just to step on the mat, but to make the right decisions 
+Benevolence: Mindset to do good \n Be kind and generous
+Respect: Politeness / Propriety\n Proper consideration and courtesy to others \n Don’t be an asshole 
+Loyalty;Faithfulness & Alliance,\n not blind allegiance 
+Honesty / Sincerity: Be a man of your word\n Do what you say you will\n Genuine Integrity in character & action 
+Honor: Profound respect & ethical conduct 
+
 5 Keys to Health: Nutrition\n Exercise\n Rest\n Hygiene\n Attitude
 Nutrition: Eat sensibly
 Exercise: Stay fit and ready
@@ -9,6 +18,8 @@ Rest: Recover and recharge
 Hygiene: Stay clean
 Attitude: Assume positive intent
 Positive Attitude: Look at life in a positive way
+
+4 States of Mind: Shoshin\n Zanshin\n Mushin\n Fudoshin
 Shoshin: Beginner's Mind
 Shoshin characteristics: Be open to new ideas and eager to learn
 Zanshin: Remaining Mind
@@ -17,5 +28,5 @@ Mushin: No Mind (Clear Mind)
 Mushin characteristics: Ability to act in the moment without having to think
 Fudoshin: Immovable Mind
 Fudoshin characteristics: Emotional balance\n Free from anger fear and doubt
-4 States of Mind: Shoshin\n Zanshin\n Mushin\n Fudoshin
+
 5 Elements of Jiu Jitsu: Striking\n Clinching\n Grappling\n Self Defense\n Philosophy
