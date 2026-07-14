@@ -34,6 +34,20 @@
              stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
         <span id="deck-name"></span>
       </button>
+      <div id="side-mode" role="group" aria-label="Which side shows first">
+        <button id="mode-a" class="mode-btn" type="button" aria-label="Show side A first" aria-pressed="false">A</button>
+        <button id="mode-b" class="mode-btn" type="button" aria-label="Show side B first" aria-pressed="false">B</button>
+        <button id="mode-random" class="mode-btn" type="button" aria-label="Show a random side first" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 3 21 3 21 8" />
+            <line x1="4" y1="20" x2="21" y2="3" />
+            <polyline points="21 16 21 21 16 21" />
+            <line x1="15" y1="15" x2="21" y2="21" />
+            <line x1="4" y1="4" x2="9" y2="9" />
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main id="card-area">

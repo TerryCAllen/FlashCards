@@ -8,9 +8,11 @@
   var deck = [];      // current deck cards: [{ a, b }]
   var order = [];     // indices into deck for the current pass
   var passPos = 0;    // cards consumed from the current pass
-  var history = [];   // [{ cardIndex, side }] every slide displayed
+  var history = [];   // [{ cardIndex, side, revealed }] every slide displayed
   var pos = -1;       // current index into history
   var inStudy = false;
+  var sideMode = "random"; // "a" | "b" | "random": which side shows first
+  var MODE_KEY = "flashcards-side-mode";
 
   var deckListView = document.getElementById("deck-list");
   var deckButtons = document.getElementById("deck-buttons");
@@ -98,6 +100,13 @@
     return Math.random() < 0.5 ? "a" : "b";
   }
 
+  // The side shown first for a new card, based on the selected mode.
+  function questionSide() {
+    if (sideMode === "a") return "a";
+    if (sideMode === "b") return "b";
+    return randomSide();
+  }
+
   function drawNextCard() {
     if (passPos >= order.length) {
       shuffle(order);
@@ -138,7 +147,7 @@
       pos++;
     } else {
       var cardIndex = drawNextCard();
-      history.push({ cardIndex: cardIndex, side: randomSide(), revealed: false });
+      history.push({ cardIndex: cardIndex, side: questionSide(), revealed: false });
       pos++;
     }
     render();
@@ -229,12 +238,46 @@
     });
   }
 
+  // ---------- side mode ----------
+  function updateModeButtons() {
+    var ids = { a: "mode-a", b: "mode-b", random: "mode-random" };
+    Object.keys(ids).forEach(function (key) {
+      var btn = document.getElementById(ids[key]);
+      if (!btn) return;
+      var on = sideMode === key;
+      btn.classList.toggle("active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  function setMode(mode) {
+    sideMode = mode;
+    try { localStorage.setItem(MODE_KEY, mode); } catch (e) {}
+    updateModeButtons();
+    // Re-point the current question to the chosen side (only if not yet revealed).
+    if (inStudy && pos >= 0 && history.length && !history[pos].revealed && mode !== "random") {
+      history[pos].side = mode;
+      render();
+    }
+  }
+
+  function loadMode() {
+    try {
+      var saved = localStorage.getItem(MODE_KEY);
+      if (saved === "a" || saved === "b" || saved === "random") sideMode = saved;
+    } catch (e) {}
+    updateModeButtons();
+  }
+
   // ---------- controls ----------
   function bindControls() {
     document.getElementById("btn-prev").addEventListener("click", prev);
     document.getElementById("btn-next").addEventListener("click", next);
     document.getElementById("btn-flip").addEventListener("click", flip);
     document.getElementById("btn-decks").addEventListener("click", showDeckList);
+    document.getElementById("mode-a").addEventListener("click", function () { setMode("a"); });
+    document.getElementById("mode-b").addEventListener("click", function () { setMode("b"); });
+    document.getElementById("mode-random").addEventListener("click", function () { setMode("random"); });
 
     document.addEventListener("keydown", function (e) {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
@@ -280,6 +323,7 @@
 
   // ---------- init ----------
   bindControls();
+  loadMode();
 
   fetch(MANIFEST, { cache: "no-store" })
     .then(function (res) {

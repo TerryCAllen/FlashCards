@@ -75,13 +75,15 @@ body {
 #study-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   padding: calc(10px + env(safe-area-inset-top)) 12px 4px;
 }
 #btn-decks {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin: 0 auto;
+  margin: 0;
   padding: 8px 14px;
   border: none;
   background: transparent;
@@ -94,6 +96,38 @@ body {
 }
 #btn-decks svg { width: 20px; height: 20px; }
 #btn-decks:active { background: var(--blue-soft); }
+
+#side-mode {
+  display: inline-flex;
+  gap: 3px;
+  padding: 3px;
+  background: var(--ctrl-bg);
+  border: 1px solid var(--ctrl-border);
+  border-radius: 12px;
+  flex: none;
+}
+.mode-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 38px;
+  padding: 0 8px;
+  border: none;
+  background: transparent;
+  color: var(--blue);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1;
+  border-radius: 9px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.mode-btn svg { width: 18px; height: 18px; }
+.mode-btn.active {
+  background: var(--blue);
+  color: #fff;
+}
 
 /* Card area */
 #card-area {
