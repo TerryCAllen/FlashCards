@@ -6,14 +6,25 @@ Plain HTML, CSS, and vanilla JavaScript — no build step, no modules.
 ## Use it
 
 On load (or refresh) the app shows a **deck picker**. Tap a deck to start
-studying it — the first card appears immediately, showing a random side. Three
-large buttons sit at the bottom:
+studying it — the first card appears immediately as a *question*, showing just
+one side.
+
+You study by cycling **question → answer → next question**. Two large buttons
+sit at the bottom:
 
 | Button | Action | Keys |
 | ------ | ------ | ---- |
-| Left   | Previous card | `←` or `A` |
-| Middle | Flip side A / side B | `↑` `↓` or `W` `S` |
-| Right  | Next card (random side) | `→` or `D` |
+| Left   | Previous card (rewind) | `←` or `A` |
+| Right  | Reveal the answer, then go to the next card | `→` or `D` |
+
+Pressing the right button on a question **reveals the answer** — both sides at
+once, side A on top (bold), a divider, then side B below. Press it again to
+advance to the next card's question. On desktop you can also toggle the answer
+on and off with `↑` `↓` or `W` `S`.
+
+At the top right, an **A / B / ⇄** toggle chooses which side shows first on each
+question: side A, side B, or a random side. It defaults to **A** and your choice
+is remembered between visits.
 
 Tap the deck name at the top (or press `Esc`) to return to the deck picker. On
 the picker, number keys `1`–`9` jump straight into a deck.
